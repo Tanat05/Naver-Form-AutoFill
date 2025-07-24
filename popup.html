@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+        <div class="header">
+            <h2>정보 입력</h2>
+        </div>
+        <div class="form-group">
+            <label for="email">이메일</label>
+            <input type="email" id="email" placeholder="email@example.com">
+        </div>
+        <div class="form-group">
+            <label for="name">이름</label>
+            <input type="text" id="name" placeholder="홍길동">
+        </div>
+        <div class="form-group">
+            <label for="phone">전화번호</label>
+            <input type="tel" id="phone" placeholder="010-1234-5678">
+        </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="section">
+        <div class="header">
+            <h2>자동 실행 설정</h2>
+            <p class="description">페이지 접속 시 동작</p>
+        </div>
+        <div class="option-group">
+            <div class="radio-option">
+                <input type="radio" id="autofillAndFocus" name="autoAction" value="autofillAndFocus">
+                <label for="autofillAndFocus">자동으로 입력하고 비어있는 첫 칸 선택</label>
+            </div>
+            <div class="radio-option">
+            <input type="radio" id="autofill" name="autoAction" value="autofill">
+            <label for="autofill">자동으로 입력</label>
+            </div>
+            <div class="radio-option">
+            <input type="radio" id="focus" name="autoAction" value="focus">
+            <label for="focus">첫 입력칸 선택</label>
+            </div>
+            <div class="radio-option">
+            <input type="radio" id="none" name="autoAction" value="none" checked>
+            <label for="none">사용 안 함</label>
+            </div>
+        </div>
+        </div>
+        
+        <div class="button-group">
+            <button id="save" class="secondary">정보/설정 저장</button>
+            <button id="fillForm" class="primary">지금 채우기</button>
+        </div>
+        <div id="status"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

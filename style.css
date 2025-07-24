@@ -1,0 +1,144 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Helvetica Neue', 'sans-serif';
+  width: 340px;
+  background-color: #F9FAFB;
+  color: #191F28;
+  margin: 0;
+}
+
+.container {
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 16px;
+}
+
+.header {
+  margin-bottom: 16px;
+}
+
+.header h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333D4B;
+  margin: 0;
+}
+
+.header .description {
+    font-size: 13px;
+    color: #4E5968;
+    margin: 4px 0 0 0;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #4E5968;
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #D9E0E8;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+}
+
+.form-group input::placeholder {
+    color: #B0B8C1;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #3182F6;
+  box-shadow: 0 0 0 3px rgba(49, 130, 246, 0.2);
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #E5E8EB;
+  margin: 20px 0;
+}
+
+.option-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.radio-option:hover {
+    background-color: #F2F4F6;
+}
+
+.radio-option input[type="radio"] {
+    margin-right: 12px;
+    width: 16px;
+    height: 16px;
+    accent-color: #3182F6;
+}
+
+.radio-option label {
+    font-size: 15px;
+    color: #333D4B;
+}
+
+.button-group {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+button {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button.primary {
+    background-color: #3182F6;
+    color: white;
+}
+
+button.secondary {
+    background-color: #E5E8EB;
+    color: #4E5968;
+}
+
+button.primary:hover {
+  background-color: #1B64DA;
+}
+
+button.secondary:hover {
+    background-color: #D1D6DB;
+}
+
+#status {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3182F6;
+    height: 16px;
+}

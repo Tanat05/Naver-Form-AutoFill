@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "네이버 폼 자동 채우기",
+  "version": "1.0",
+  "description": "네이버 폼의 이메일, 이름, 전화번호를 자동으로 채워줍니다.",
+  "permissions": [
+    "scripting",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://office.naver.com/form/*",
+    "https://form.naver.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
