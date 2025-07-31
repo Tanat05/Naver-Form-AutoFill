@@ -1,3 +1,3 @@
-# 네이버 폼 자동입력(크롬 확장기능)
+# [네이버 폼 자동 채우기](https://chromewebstore.google.com/detail/%EB%84%A4%EC%9D%B4%EB%B2%84-%ED%8F%BC-%EC%9E%90%EB%8F%99-%EC%B1%84%EC%9A%B0%EA%B8%B0/pbnbiknmokkmeechohdjbbbmgdoefpee)
 
-<img width="425" height="750" alt="스크린샷 2025-07-25 003120" src="https://github.com/user-attachments/assets/44c29f1f-2eb6-4187-be30-af1bc567ba02" />
+<img width="128" height="128" alt="SCH" src="https://github.com/user-attachments/assets/001312b8-91f0-4e27-b1e9-95b5d711e840" />
