@@ -75,14 +75,6 @@ body {
     gap: 4px;
 }
 
-.radio-option {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
 .radio-option:hover {
     background-color: #F2F4F6;
 }
@@ -139,6 +131,188 @@ button.secondary:hover {
     text-align: center;
     font-size: 14px;
     font-weight: 500;
-    color: #3182F6;
     height: 16px;
+}
+
+#status.success {
+    color: #06C755;
+}
+
+#status.error {
+    color: #F04452;
+}
+
+.toggle-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.toggle-label {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    margin: 0;
+}
+
+.toggle-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.toggle-text strong {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333D4B;
+}
+
+.toggle-text small {
+    font-size: 13px;
+    color: #8B95A1;
+    font-weight: 400;
+}
+
+.toggle-switch {
+    position: relative;
+    width: 44px;
+    height: 24px;
+}
+
+.toggle-switch input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #D9E0E8;
+    transition: 0.3s;
+    border-radius: 24px;
+}
+
+.toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+input:checked + .toggle-slider {
+    background-color: #3182F6;
+}
+
+input:checked + .toggle-slider:before {
+    transform: translateX(20px);
+}
+
+/* 툴팁 스타일 */
+.tooltip, .info-icon {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #8B95A1;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    line-height: 16px;
+    cursor: help;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.tooltip:hover, .info-icon:hover {
+    background-color: #3182F6;
+}
+
+.tooltip::after, .info-icon::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%;
+    right: 0;
+    background-color: #333D4B;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: normal;
+    white-space: normal;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    max-width: 200px;
+    width: 200px;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.tooltip::before, .info-icon::before {
+    content: "";
+    position: absolute;
+    bottom: 120%;
+    right: 10px;
+    border: 5px solid transparent;
+    border-top-color: #333D4B;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.tooltip:hover::after, .info-icon:hover::after,
+.tooltip:hover::before, .info-icon:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.radio-option .tooltip {
+    margin-left: auto;
+}
+
+.radio-option .tooltip::after {
+    width: 160px;
+    max-width: 160px;
+}
+
+.toggle-option {
+    padding: 12px 16px;
+    border: 1px solid #D9E0E8;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.toggle-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+.toggle-header .info-icon {
+    margin-left: 8px;
+    margin-top: 2px;
 }
