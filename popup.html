@@ -20,8 +20,11 @@
         </div>
         <div class="form-group">
             <label for="phone">전화번호</label>
-            <input type="tel" id="phone" placeholder="010-1234-5678">
+            <input type="tel" id="phone" placeholder="01012345678">
         </div>
+        <div class="form-group">
+            <label for="age">나이</label>
+            <input type="number" id="age" placeholder="25">
         </div>
 
         <hr class="divider">
@@ -34,15 +37,18 @@
         <div class="option-group">
             <div class="radio-option">
                 <input type="radio" id="autofillAndFocus" name="autoAction" value="autofillAndFocus">
-                <label for="autofillAndFocus">자동으로 입력하고 비어있는 첫 칸 선택</label>
+                <label for="autofillAndFocus">자동 입력 + 빈칸 선택</label>
+                <span class="tooltip" data-tooltip="폼을 자동으로 채우고 빈 필드에 포커스를 맞춥니다">ⓘ</span>
             </div>
             <div class="radio-option">
             <input type="radio" id="autofill" name="autoAction" value="autofill">
-            <label for="autofill">자동으로 입력</label>
+            <label for="autofill">자동 입력만</label>
+            <span class="tooltip" data-tooltip="저장된 정보로 폼을 자동으로 채웁니다">ⓘ</span>
             </div>
             <div class="radio-option">
             <input type="radio" id="focus" name="autoAction" value="focus">
-            <label for="focus">첫 입력칸 선택</label>
+            <label for="focus">첫 입력칸만 선택</label>
+            <span class="tooltip" data-tooltip="첫 번째 입력 필드에만 포커스를 맞춥니다">ⓘ</span>
             </div>
             <div class="radio-option">
             <input type="radio" id="none" name="autoAction" value="none" checked>
@@ -50,9 +56,34 @@
             </div>
         </div>
         </div>
+
+        <hr class="divider">
+
+        <div class="section">
+        <div class="header">
+            <h2>고급 설정</h2>
+        </div>
+        <div class="toggle-group">
+            <div class="toggle-option">
+                <div class="toggle-header">
+                    <span class="toggle-text">
+                        <strong>스마트 자동입력</strong>
+                        <small>질문 제목을 분석하여 자동 입력</small>
+                    </span>
+                    <span class="info-icon" data-tooltip="질문 제목을 분석하여 적절한 필드에 정보를 입력합니다. 잘못된 질문에 자동 입력이 되거나 정상적으로 작동하지 않을 수 있습니다. 해당 기능은 처리 시간이 걸릴 수 있습니다.">ⓘ</span>
+                </div>
+                <label for="smartFill" class="toggle-label">
+                    <div class="toggle-switch">
+                        <input type="checkbox" id="smartFill" checked>
+                        <span class="toggle-slider"></span>
+                    </div>
+                </label>
+            </div>
+        </div>
+        </div>
         
         <div class="button-group">
-            <button id="save" class="secondary">정보/설정 저장</button>
+            <button id="save" class="secondary">저장</button>
             <button id="fillForm" class="primary">지금 채우기</button>
         </div>
         <div id="status"></div>
